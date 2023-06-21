@@ -1,0 +1,320 @@
+.pokecard__container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: auto;
+    place-items: center;
+    gap: 1rem;  
+    margin: 0 auto;
+}
+
+.pokecard {
+    width: 100%;
+    max-width: 280px;
+    font-size: 1rem;
+    border-radius: 0.8em;
+    border: 0.5em solid #ccc;
+    cursor: pointer;
+    transition: transform 150ms ease;
+}
+
+.pokecard:hover{
+    transform: scale(1.05);
+}
+
+.pokecard__header {
+    aspect-ratio: 2.5;
+    position: relative;
+    background-color: #ccc;
+}
+
+.pokecard__img {
+    position: absolute;
+    width: 50%;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pokecard__body {
+    padding-top: 3em;
+}
+
+.pokecard__name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+
+.pokecard__types {
+    display: flex;
+    justify-content: center;
+    gap: 0.6em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.pokecard__types-item {
+    text-transform: capitalize;
+    position: relative;
+}
+
+.pokecard__types-item::before{
+    content: '/';
+    position: absolute;
+    left: -0.3em;
+} 
+
+.pokecard__types-item:first-child::before {
+content: none;
+}
+
+.pokecard__tipo {
+    text-align: center;
+    text-transform: capitalize;
+    opacity: 0.4;
+    color: rgba(79, 79, 79, 1);
+}
+
+.pokecard__stats {
+    padding: 0.5em 0.5em 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1em 0.2em;
+}
+
+.pokecard__stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.pokecard__stats-label {
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: rgba(79, 79, 79, 1);
+}
+
+.pokecard__stats-value {
+    font-size: 1.4rem;
+}
+
+.normal {
+    color:rgba(188, 107, 124, 1);
+}
+
+.bg-normal {
+    background-image: linear-gradient(180deg, rgba(115, 82, 89, 1)5%, rgba(188, 107, 124, 1) 20%, rgba(124, 63, 76, 1)97%);
+}
+
+.br-normal {
+    border: 0.5em solid rgba(124, 63, 76, 1);
+} 
+
+.fighting {
+    color: rgba(241, 97, 60, 1) ;
+}
+
+.bg-fighting {
+    background-image: linear-gradient(180deg, rgba(150, 64, 42, 1)5%, rgba(241, 97, 60, 1) 20%, rgba(203, 115, 93, 1)97%);
+
+}
+
+.br-fighting {
+  border: 0.5em solid rgba(203, 115, 93, 1);
+}
+
+.poison {
+    color: rgba(165, 100, 227, 1) ;
+} 
+
+.bg-poison {
+    background-image: linear-gradient(180deg, rgba(91, 49, 132, 1)5%, rgba(165, 100, 227, 1) 20%, rgba(206, 155, 255, 1)97%);
+}
+
+.br-poison {
+    border: 0.5em solid rgba(206, 155, 255, 1);  
+}
+
+.ground {
+    color: rgba(137, 92, 26, 1) ;
+}
+
+.bg-ground {
+    background-image: linear-gradient(180deg, rgba(101, 64, 8, 1)5%, rgba(137, 92, 26, 1)20%, rgba(214, 150, 56, 1)97%);
+}
+
+.br-ground {
+    border: 0.5em solid rgba(214, 150, 56, 1);  
+}
+
+.rock {
+    color: rgba(141, 141, 148, 1) ;
+}
+
+.bg-rock {
+    background-image: linear-gradient(180deg, rgba(126, 126, 126, 1)5%, rgba(141, 141, 148, 1)20%, rgba(211, 211, 211, 1)97%);
+}
+
+.br-rock {
+    border: 0.5em solid rgba(211, 211, 211, 1);  
+}
+
+.bug {
+    color:  rgba(59, 176, 57, 1);
+ }
+
+ .bg-bug {
+    background-image: linear-gradient(180deg, rgba(98, 219, 96, 1)5%, rgba(59, 176, 57, 1)20%, rgba(170, 255, 168, 1)97%);
+ }
+
+ .br-bug {
+    border: 0.5em solid rgba(170, 255, 168, 1);  
+ }
+
+ .ghost {
+    color:  rgba(69, 74, 168, 1);
+ }
+
+ .bg-ghost {
+    background-image: linear-gradient(180deg, rgba(50, 53, 105, 1)5%, rgba(69, 74, 168, 1)20%, rgba(120, 125, 218, 1)97%);
+ }
+
+ .br-ghost {
+    border: 0.5em solid rgba(120, 125, 218, 1);  
+ }
+
+ .steel {
+    color:  rgba(114, 136, 129, 1);
+ }
+
+ .bg-steel {
+    background-image: linear-gradient(180deg, rgba(94, 115, 108, 1)5%, rgba(114, 136, 129, 1)20%, rgba(168, 168, 168, 1)97%);
+ }
+
+ .br-steel {
+    border: 0.5em solid rgba(168, 168, 168, 1);  
+ }
+
+ .fire {
+    color:  rgba(227, 88, 37, 1);
+   }
+
+ .bg-fire {
+    background-image: linear-gradient(180deg, rgba(249, 109, 111, 1)5%, rgba(227, 88, 37, 1)20%, rgba(232, 174, 27, 1)97%);
+ }
+
+ .br-fire {
+    border: 0.5em solid rgba(227, 88, 37, 1);  
+ }
+
+.water {
+ color:rgba(20, 121, 251, 1)
+}
+
+.bg-water {
+    background-image: linear-gradient(180deg, rgba(19, 50, 88, 1)5%, rgba(20, 121, 251, 1)20%, rgba(130, 178, 241, 1)97%);
+ }
+
+ .br-water {
+    border: 0.5em solid rgba(130, 178, 241, 1);  
+ }
+
+.grass {
+ color: rgba(126, 198, 197, 1);  
+}
+
+.bg-grass {
+    background-image: linear-gradient(180deg, rgba(126, 198, 197, 1)5%, rgba(171, 218, 198, 1) 20%, rgba(202, 224, 153, 1) 97%);
+}
+
+.br-grass {
+    border: 0.5em solid rgb(179, 214, 136);   
+}
+
+.electric {
+    color: rgba(43, 49, 155, 1);  
+}
+   
+.bg-electric{
+    background-image: linear-gradient(180deg, rgba(12, 19, 149, 1)5%, rgba(43, 49, 155, 1) 20%, rgba(112, 117, 217, 1) 97%);
+}
+   
+.br-electric {
+    border: 0.5em solid rgba(112, 117, 217, 1);   
+}
+
+.psychic {
+    color: rgba(194, 56, 103, 1);  
+}
+   
+.bg-psychic{
+    background-image: linear-gradient(180deg, rgba(151, 27, 69, 1)5%, rgba(194, 56, 103, 1) 20%, rgba(205, 125, 152, 1) 97%);
+}
+   
+.br-psychic {
+    border: 0.5em solid rgba(205, 125, 152, 1);   
+}
+
+.ice {
+    color: rgba(100, 203, 245, 1) ;  
+}
+   
+.bg-ice{
+    background-image: linear-gradient(180deg, rgba(111, 190, 223, 1)5%, rgba(100, 203, 245, 1) 20%, rgba(189, 235, 254, 1)97%);
+}
+   
+.br-ice {
+    border: 0.5em solid rgba(100, 203, 245, 1) ;   
+}
+
+.dragon {
+    color: rgba(86, 164, 174, 1) ;  
+}
+   
+.bg-dragon{
+    background-image: linear-gradient(180deg, rgba(71, 138, 147, 1)5%, rgba(86, 164, 174, 1) 20%, rgba(162, 190, 193, 1)97%);
+}
+   
+.br-dragon {
+    border: 0.5em solid rgba(86, 164, 174, 1);   
+}
+
+.dark {
+    color: rgba(13, 18, 17, 1) ;  
+}
+   
+.bg-dark {
+    background-image: linear-gradient(180deg, rgba(3, 7, 6, 1)5%, rgba(13, 18, 17, 1) 20%, rgba(90, 94, 93, 1)97%);
+}
+   
+.br-dark  {
+    border: 0.5em solid rgba(13, 18, 17, 1);   
+}
+
+.fairy {
+    color: rgb(51, 20, 82) ;  
+}
+   
+.bg-fairy {
+    background-image: linear-gradient(180deg, rgb(23, 5, 41)5%, rgb(51, 20, 82) 20%, rgb(170, 133, 206)97%);
+}
+   
+.br-fairy  {
+    border: 0.5em solid rgb(51, 20, 82);   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

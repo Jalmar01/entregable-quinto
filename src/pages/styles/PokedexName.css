@@ -1,0 +1,451 @@
+.pokename__container-principal {
+    width: 100%;
+    font-family: sans-serif;
+    text-transform: capitalize; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.pokename__header{
+    position: absolute;
+    width: 100%;
+    min-width: 350px;
+    height: 80px;
+    background-image: linear-gradient(180deg, rgb(136, 3, 3)5%, rgb(194, 5, 5) 20%, rgb(227, 100, 100)97%);
+    top: 0;
+    right: 0;
+    left: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.pokename__header img{
+    width: 60%;
+    min-width: 30%;
+    height: 80%;  
+}
+
+.pokename__container-dv {
+    width: 80%;
+    min-width: 300px;
+    font-family: sans-serif;
+    text-transform: capitalize; 
+    background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 10rem;
+}
+
+.pokename__img {
+    width: 100%;
+    min-width: 250px;
+    aspect-ratio: 2.1;
+    height: 90px;
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pokename__img  img {
+    max-width: 170px;
+    position: absolute;
+    bottom: 5px;
+  
+}
+
+.pokename__conatine-name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.pokename__number{
+    width: 35px;
+    text-align: center;
+    margin-top: 10px; 
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 0.2em;
+    font-size: 1.5rem;
+ }
+
+ .pokename__conatine-name--linea {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+ }
+
+.pokename__linea{
+    min-width: 20%;
+    height: 2px;
+    background-color: #ccc; 
+}
+
+.pokename__containe-wh{ 
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+
+.pokename__weight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.pokename__weight span {
+    font-size: 0.6em;
+}
+
+.pokename__height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.pokename__height span {
+    font-size: 0.6em;
+}
+
+.pokename__container-ta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.pokename__container-ta div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+} 
+
+.pokename__types-info,
+.pokename__abilities-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;   
+}
+
+.pokename__types-info li{
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 2px;
+    font-weight: 400;
+}
+
+.pokename__container-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em; 
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pokename__container-linea {
+    width: 80%;
+    display: flex; 
+    justify-content: center;  
+    align-items: center;
+    gap: 0.5em; 
+}
+
+.pokename__stats-linea {
+    width: 100%;
+    height: 2px; 
+}
+
+.pokename__stats {
+    width: 80%;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokename__stats-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokename__stats-label {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center; 
+    margin-bottom: -1em; 
+}
+
+.pokename__stats-value {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 1em;
+} 
+
+.pokename__barra-padre {
+    background-color: #ccc;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5em;
+}
+
+.pokename__barra-hijo {
+    height: 100%;
+    width: 40%; 
+    border-radius: 0.5em;
+}
+
+.pokename__container-moves--general {
+    width: 80%;
+    min-width: 300px;
+    font-family: sans-serif;
+    text-transform: capitalize; 
+    background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 2rem;
+}
+
+.pokename__container-moves{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em; 
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pokename__container-moves--linea{
+    margin-top: 1em;
+    width: 80%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;
+    gap: 0.5em;
+}
+
+.pokename__moves-linea {
+    width: 100%;
+    height: 2px; 
+}
+
+.pokename__moves-ul {
+    width: 80%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.pokename__moves-ul li {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+.normal {
+    color:rgba(188, 107, 124, 1);
+}
+
+.bg-normal {
+    background-image: linear-gradient(180deg, rgba(115, 82, 89, 1)5%, rgba(188, 107, 124, 1) 20%, rgba(124, 63, 76, 1)97%);
+}
+
+.fighting {
+    color: rgba(241, 97, 60, 1) ;
+}
+
+.bg-fighting {
+    background-image: linear-gradient(180deg, rgba(150, 64, 42, 1)5%, rgba(241, 97, 60, 1) 20%, rgba(203, 115, 93, 1)97%);
+
+}
+
+.poison {
+    color: rgba(165, 100, 227, 1) ;
+} 
+
+.bg-poison {
+    background-image: linear-gradient(180deg, rgba(91, 49, 132, 1)5%, rgba(165, 100, 227, 1) 20%, rgba(206, 155, 255, 1)97%);
+}
+
+.ground {
+    color: rgba(137, 92, 26, 1) ;
+}
+
+.bg-ground {
+    background-image: linear-gradient(180deg, rgba(101, 64, 8, 1)5%, rgba(137, 92, 26, 1)20%, rgba(214, 150, 56, 1)97%);
+}
+
+.rock {
+    color: rgba(141, 141, 148, 1) ;
+}
+
+.bg-rock {
+    background-image: linear-gradient(180deg, rgba(126, 126, 126, 1)5%, rgba(141, 141, 148, 1)20%, rgba(211, 211, 211, 1)97%);
+}
+
+.bug {
+    color:  rgba(59, 176, 57, 1);
+ }
+
+ .bg-bug {
+    background-image: linear-gradient(180deg, rgba(98, 219, 96, 1)5%, rgba(59, 176, 57, 1)20%, rgba(170, 255, 168, 1)97%);
+ }
+
+ .ghost {
+    color:  rgba(69, 74, 168, 1);
+ }
+
+ .bg-ghost {
+    background-image: linear-gradient(180deg, rgba(50, 53, 105, 1)5%, rgba(69, 74, 168, 1)20%, rgba(120, 125, 218, 1)97%);
+ }
+
+ .steel {
+    color:  rgba(114, 136, 129, 1);
+ }
+
+ .bg-steel {
+    background-image: linear-gradient(180deg, rgba(94, 115, 108, 1)5%, rgba(114, 136, 129, 1)20%, rgba(168, 168, 168, 1)97%);
+ }
+
+ .fire {
+    color:  rgba(227, 88, 37, 1);
+   }
+
+ .bg-fire {
+    background-image: linear-gradient(180deg, rgba(249, 109, 111, 1)5%, rgba(227, 88, 37, 1)20%, rgba(232, 174, 27, 1)97%);
+ }
+
+.water {
+ color:rgba(20, 121, 251, 1)
+}
+
+.bg-water {
+    background-image: linear-gradient(180deg, rgba(19, 50, 88, 1)5%, rgba(20, 121, 251, 1)20%, rgba(130, 178, 241, 1)97%);
+ }
+
+.grass {
+ color: rgba(126, 198, 197, 1);  
+}
+
+.bg-grass {
+    background-image: linear-gradient(180deg, rgba(126, 198, 197, 1)5%, rgba(171, 218, 198, 1) 20%, rgba(202, 224, 153, 1) 97%);
+}
+
+.electric {
+    color: rgba(43, 49, 155, 1);  
+}
+   
+.bg-electric{
+    background-image: linear-gradient(180deg, rgba(12, 19, 149, 1)5%, rgba(43, 49, 155, 1) 20%, rgba(112, 117, 217, 1) 97%);
+}
+
+.psychic {
+    color: rgba(194, 56, 103, 1);  
+}
+   
+.bg-psychic{
+    background-image: linear-gradient(180deg, rgba(151, 27, 69, 1)5%, rgba(194, 56, 103, 1) 20%, rgba(205, 125, 152, 1) 97%);
+}
+
+.ice {
+    color: rgba(100, 203, 245, 1) ;  
+}
+   
+.bg-ice{
+    background-image: linear-gradient(180deg, rgba(111, 190, 223, 1)5%, rgba(100, 203, 245, 1) 20%, rgba(189, 235, 254, 1)97%);
+}
+
+.dragon {
+    color: rgba(86, 164, 174, 1) ;  
+}
+   
+.bg-dragon{
+    background-image: linear-gradient(180deg, rgba(71, 138, 147, 1)5%, rgba(86, 164, 174, 1) 20%, rgba(162, 190, 193, 1)97%);
+}
+
+.dark {
+    color: rgba(13, 18, 17, 1) ;  
+}
+   
+.bg-dark {
+    background-image: linear-gradient(180deg, rgba(3, 7, 6, 1)5%, rgba(13, 18, 17, 1) 20%, rgba(90, 94, 93, 1)97%);
+}
+
+.fairy {
+    color: rgb(51, 20, 82) ;  
+}
+   
+.bg-fairy {
+    background-image: linear-gradient(180deg, rgb(23, 5, 41)5%, rgb(51, 20, 82) 20%, rgb(170, 133, 206)97%);
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+.container {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+.home__container-img {
+    width: 70%;
+    position: absolute;
+    top: 80px;
+}
+
+.home__info{
+position: absolute;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-items: center;
+ align-items: center;
+ top: 250px;
+}
+
+.home__title {
+    color: red;
+    font-size: 2em;
+}
+
+.container  p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.home__input {
+    width: 60%;
+    min-width: 133px;
+    height: 35px;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.home__button {
+    background-color: red;
+    width: 100px;
+    height: 38px;
+    border: none;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+    border-radius: 0.5em;
+    cursor: pointer;
+    color: white;
+    margin: 0.3em;
+}
+
+.home__fotter {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
