@@ -36,6 +36,7 @@ const handleSubmit = e => {
         <footer className="home__fotter">
           <img src="./imge/footerpokedex.svg" alt="" />
         </footer>
+        <link rel="stylesheet" href="https://github.com/Jalmar01/entregable-quinto" />
     </main>
   )
 }
