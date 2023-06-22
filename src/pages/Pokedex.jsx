@@ -76,7 +76,8 @@ const Pokedex = () => {
             onSubmit={handleSubmitPoke}>
             <input 
               className="pokedex__input" 
-              ref={searchPoke} type="text" 
+              ref={searchPoke} type="Your favorite pokemon" 
+              // value= 'Your favorite pokemon...'
             />
             <button className="pokedex__button">Search</button>
             <select className="pokedex__select" onChange={handelChangeType }>
@@ -84,9 +85,10 @@ const Pokedex = () => {
               {
                 types?.results.map(typeInfo => (
                   <option 
+                  className="pokedex__optional-label"
                     value={typeInfo.url}
                     key={typeInfo.url}
-                  ><p>{typeInfo.name}</p></option> 
+                  >{typeInfo.name}</option> 
                 ))
               }
             </select>

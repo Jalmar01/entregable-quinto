@@ -28,7 +28,8 @@ const handleSubmit = e => {
           <h2 className="home__title">Hi, Trainer</h2>
           <p>to start in this application, please, give me your trainer name.</p>
           <form className="home__form" onSubmit={handleSubmit}>
-              <input className="home__input" ref={trainerNameRef} type="text" />
+              <input className="home__input" ref={trainerNameRef} type="text"         
+              />
               <button className="home__button">Catch them all</button>
           </form>
         </div>

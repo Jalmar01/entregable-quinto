@@ -76,9 +76,11 @@
     cursor: pointer;
 }
 
-/* .pokedex__optional option:hover{
-    background-color: rgb(236, 117, 117);
-}  */
+/* .pokedex__optional-label {
+ background-color: rgb(236, 117, 117);
+ color: aliceblue;
+} */
+
 
 @media screen and (min-width:700px) {
 

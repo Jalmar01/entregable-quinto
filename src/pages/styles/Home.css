@@ -41,6 +41,7 @@ position: absolute;
     border-radius: 0.5em;
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    color: #ccc;
 }
 
 .home__button {

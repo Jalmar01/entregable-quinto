@@ -91,6 +91,7 @@ const PokedexName = () => {
                                       style={{width:`calc(${statInfo.base_stat}/250*100%)`}}
                                          className={`pokename__barra-hijo bg-${pokemon?.types[0].type.name}`}>
                                     </div>
+                                    <link rel="stylesheet" href="https://github.com/Jalmar01/entregable-quinto" />
                                   </div>
                               </li> 
                               

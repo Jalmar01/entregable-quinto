@@ -1,7 +1,7 @@
 import PokeCard from "./PokeCard"
 import './styles/PokeContainers.css'
 
-const PokeContainers = ({pokemons, initialItems, setInitialPage, initialPage, contentPerPage}) => {
+const PokeContainers = ({initialItems, setInitialPage, initialPage, contentPerPage}) => {
 
 
   const previousPage = () => {
