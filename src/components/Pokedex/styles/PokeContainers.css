@@ -1,0 +1,31 @@
+
+.pokecontainer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pokecontainer__span {
+    min-width: 40px;
+    min-height: 30px;
+    color: rgb(247, 36, 36);
+    border-radius: 0.5em;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.pokecontainer__btn {
+    min-width: 80px;
+    min-height: 30px;
+    border: none;
+    background-color: rgb(247, 36, 36);
+    border-radius: 0.5em;
+    color: #ccc;
+    cursor: pointer;
+}

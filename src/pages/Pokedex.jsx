@@ -8,6 +8,15 @@ import '../pages/styles/Pokedex.css'
 
 const Pokedex = () => {
 
+  const [initialPage, setInitialPage] = useState(1)
+  const contentPerPage = 16
+
+
+  const indexOfLastItem = initialPage * contentPerPage
+  const indexOfFirstItem = indexOfLastItem - contentPerPage
+
+
+
   const [selectValue, setSelectValue] = useState('all-pokemons')
 
   const trainerName = useSelector(states => states.trainerName)
@@ -49,6 +58,9 @@ const Pokedex = () => {
    setSelectValue( e.target.value)
   } 
 
+  const initialItems = pokemons?.results.slice(indexOfFirstItem, indexOfLastItem)
+
+
   return (
     <div className="app__1">
         <div>
@@ -81,7 +93,14 @@ const Pokedex = () => {
           </form>
         </div>
        
-        <PokeContainers pokemons={pokemons?.results}/>
+        <PokeContainers 
+            pokemons={pokemons?.results}
+            initialItems={initialItems}
+            setInitialPage={setInitialPage}
+            initialPage={initialPage}
+            contentPerPage={contentPerPage}
+          />
+           
     </div>
     
   )

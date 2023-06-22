@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import './styles/PokedexName.css'
 
 const PokedexName = () => {
-
+    
    const { name } = useParams()
 
     const url = `https://pokeapi.co/api/v2/pokemon/${name}`
@@ -89,10 +89,8 @@ const PokedexName = () => {
                                     <p className={`pokename__stats-value  ${pokemon?.types[0].type.name}`}>{statInfo.base_stat}/250</p>
                                   <div className="pokename__barra-padre">
                                     <div 
-                                          //style={"width:calc(`${statInfo.base_stat}/250*100%`)"}
+                                          // style={`width:calc( ${statInfo.base_stat}/250%)`}
                                          className={`pokename__barra-hijo bg-${pokemon?.types[0].type.name}`}>
-                              
-                                    {/* style={{width:calc(`${statInfo.base_stat}/250*100%`)}} */}
                                     </div>
                                   </div>
                               </li> 
